@@ -1,0 +1,106 @@
+body {
+    background-color: #f1f1f1;
+}
+
+.nav-main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #FFF;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 1000;
+}
+
+.btn-toggle-nav {
+    width: 60px;
+    height: 100%;
+    background-image: url("img/Hamburger_icon.svg.png");
+    background-color: #F98F39;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: center;
+    cursor: pointer;
+}
+
+.btn-toggle-nav:hover {
+    opacity: 0.5;
+}
+
+.nav-main ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 15px;
+}
+
+.nav-main ul li {
+    list-style: none;
+    line-height: 40px;
+}
+
+.nav-main ul li a {
+    display: block;
+    height: 90%;
+    padding: 0 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #111;
+    font-family: arial;
+    font-size: 16px;
+}
+
+.nav-sidebar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 60px;
+    width: 50px;
+    height: cal(100vh - 60px);
+    padding: 0 5px;
+    background-color: #111;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-sidebar ul {
+    padding-top: 0px;
+    padding-left: 20px;
+    overflow: hidden;
+    visibility: hidden;
+    background-color: #111;
+    opacity: 0.5;
+}
+
+.nav-sidebar ul li {
+    line-height: 70px;
+    list-style: none;
+}
+
+.nav-sidebar ul li span, .nav-sidebar ul li a {
+    display: block;
+    height: 50px;
+    padding: 0 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFF;
+    font-family: arial;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+.nav-sidebar ul li span:hover {
+background-color: #111;
+}
+
+.welcome {
+    display: block;
+    height: 20px;
+    top: 70px;
+    padding: 70px 20px;
+    text-align: center;
+    font-family: montserrat;
+    font-size: 40px;
+    background-color:#F98F39;
+}
